@@ -5,40 +5,35 @@
     <title>Week 5, Part 1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts-exp.js"></script>
   </head>
 
   <body class="text-center">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
+    <div class="coverContainer d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
         <div class="inner">
-          <h3 class="masthead-brand">Week 5, Part 1 -- js game</h3>
-          <!--   <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-          </nav>   -->
+          <h3 class="masthead-brand">Week 5, Part 1</h3>
         </div>
       </header>
-
       <main role="main" class="inner cover">
-
-        <h1 class="cover-heading">Number guessing game</h1>
+        <h1 class="cover-heading">Number Guessing Game</h1>
 
         <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
         <div class="form">
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="guessField">Enter a guess:</label>
             <input type="text" class="form-control guessField" id="guessField" aria-describedby="Enter a guess" placeholder="Enter a guess">
           </div>
           <input type="submit" value="Submit guess" class="btn btn-primary guessSubmit">
         </div>
 
-        <div class="resultParas">
+        <div class="resultParas" id="bigDiv">
           <p class="guesses"></p>
           <p class="lastResult"></p>
           <p class="lowOrHi"></p>
@@ -46,10 +41,9 @@
       </main>
 
 
-
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, Stuff by Alana.</p>
         </div>
       </footer>
     </div>
